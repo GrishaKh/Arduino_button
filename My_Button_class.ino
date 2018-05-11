@@ -15,7 +15,6 @@ class button {
     boolean holdPress(unsigned int);
     void setInterval(unsigned int);
 };
-
 button::button(int pin, unsigned int interval = 30, boolean mode = false) {
   debounceTime = 0;
   lastButtonState = digitalRead(this -> pin);;
